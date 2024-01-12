@@ -1,6 +1,6 @@
 # COSMOS: Mood Tracker
 
-Team Name: Sehat Sehat Senpai
+Team Name: Sehat Sehat Senpai<br>
 Team Composition:
 1. Farhah Mutiara Arifah (Hustler)
 2. Nofa Nisrina Salsabila (Hacker)
