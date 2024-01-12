@@ -1,4 +1,5 @@
-# COSMOS: Mood Tracker
+# COSMOS: Capsule Of Moods
+Mood Tracker Application
 
 Team Name: Sehat Sehat Senpai<br>
 Team Composition:
