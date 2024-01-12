@@ -4,18 +4,33 @@ import 'package:flutter_application_1/pages/friends_page.dart';
 import 'package:flutter_application_1/pages/home_page.dart';
 import 'package:flutter_application_1/pages/settings_page.dart';
 
+
+void main() {
+  runApp(const MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: MainPage(),
+  ));
+}
+
+
 class MainPage extends StatefulWidget {
+  const MainPage({super.key});
   @override
   _MainPageState createState() => _MainPageState();
+  Widget build(BuildContext context){
+    return const MaterialApp(
+      title: 'COSMOS: Mood Tracker',
+    );
+  }
 }
 
 class _MainPageState extends State<MainPage> {
   int index = 0;
   final screens = [
-    HomePage(),
-    CalendarPage(),
-    FriendsPage(),
-    SettingsPage(),
+    const HomePage(),
+    const CalendarPage(),
+    const FriendsPage(),
+    const SettingsPage(),
   ];
 
 
@@ -24,21 +39,21 @@ class _MainPageState extends State<MainPage> {
     body: screens[index],
     bottomNavigationBar: NavigationBarTheme(
       data: NavigationBarThemeData(
-        indicatorColor: Colors.blue.shade100,
+        indicatorColor: Colors.orange.shade100,
         labelTextStyle: MaterialStateProperty.all(
-          TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
+          const TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
         ),
 
       ),
 
       child: NavigationBar(
         height: 60,
-        backgroundColor: Color(0xFFf1f5fb),
+        backgroundColor: const Color(0xFFf1f5fb),
         selectedIndex: index,
         onDestinationSelected: (index) =>
           setState(() => this.index = index),
 
-        destinations: [
+        destinations: const [
           NavigationDestination( 
             icon: Icon(Icons.rocket_launch_outlined), 
             selectedIcon: Icon(Icons.rocket_launch_sharp),
